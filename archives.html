@@ -10,30 +10,38 @@ title: 实验室成员
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Members</title>
     <style>
-        .team-container {
+        .team-container, .graduates-container {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             padding: 20px;
         }
-        .team-member {
+
+        .team-member, .graduate-member {
             text-align: center;
-            margin: 15px;
+            margin: 13px;
+            flex-basis: 30%; 
+            max-width: 30%;
+            box-sizing: border-box; 
         }
-        .team-member img {
+
+        .team-member img, .graduate-member img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
         }
-        .team-member h3 {
+
+        .team-member h3, .graduate-member h3 {
             margin: 10px 0 5px 0;
         }
-        .team-member p {
+
+        .team-member p, .graduate-member p {
             margin: 5px 0;
             font-size: 14px;
         }
-        .team-member a {
+
+        .team-member a, .graduate-member a {
             color: #007BFF;
             text-decoration: none;
         }
